@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2023 at 05:20 PM
+-- Generation Time: Apr 27, 2023 at 01:01 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -43,7 +43,8 @@ INSERT INTO `bookings` (`id`, `date`, `reason`, `created_at`, `updated_at`) VALU
 (18, '2023-04-13 06:21:00.000000', 'Golf Court Date with business partners', '2023-04-26 01:18:24.000000', '2023-04-26 01:18:24.000000'),
 (19, '2023-04-12 01:58:00.000000', 'Playing Golf with Clients at the Golf Court', '2023-04-26 07:58:40.000000', '2023-04-26 07:58:40.000000'),
 (20, '2023-04-05 11:28:00.000000', 'Golf Court Date with business partners', '2023-04-26 09:28:59.000000', '2023-04-26 09:28:59.000000'),
-(21, '2023-04-05 11:28:00.000000', 'Golf Court Date with business partners', '2023-04-26 09:31:13.000000', '2023-04-26 09:31:13.000000');
+(21, '2023-04-05 11:28:00.000000', 'Golf Court Date with business partners', '2023-04-26 09:31:13.000000', '2023-04-26 09:31:13.000000'),
+(22, '2023-04-25 20:38:00.000000', 'Golf Court Date with business partners', '2023-04-26 14:38:37.000000', '2023-04-26 14:38:37.000000');
 
 -- --------------------------------------------------------
 
@@ -340,11 +341,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('J1xs54TKmfkH0AvXjgCNapNpG0hxqXV7WJZerNfP', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoidjhsYXZOUTlxcHY4RGVyN2g4SFV4WXR3S1B3aXBHblNWOWtkdHJOeiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9yZWRpcmVjdCI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7fQ==', 1682510893),
-('KWWDPAr7c6qnIv0NihGLWNqvxvc1edXYKAp0Jpqm', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiWHdJbkhDaWZLY01uMXE0aXBCWEgxMnVnMTZuZ3pwQ1BmNVR3U2FQayI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzU6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9zaG93X2Jvb2tpbmdzIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1682497162),
-('Mif5grfz2ghRr3wq7VsRzO0uxiSyGzWRW5HIxpWL', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoid0VKVE0zU1FzMUxBcGhIRUN6ZVBFSkc5bHBCZEttWlRzRGk4TFRqTyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzU6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9zaG93X2Jvb2tpbmdzIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1682497163),
-('pgYV3XqEe4GFyXpDh5UVu7cI4NWwgiMuDxF8TaSf', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiOVRodllMTFBpbmsxZnVPcTFyRDUxVGwzRFdUbGhEMGc0S09lNWdsZSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzY6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9jcmVhdGVfYm9va2luZyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1682497164),
-('vMkcK8qFjzmobe8nKyN2zVWrJeEcjT3ZuTNNJqyq', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiYXNBbUJENGVqb0tRekFlQmN6RjlwcnBFZVZaQ1pWcmpxdEJldDFRTSI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9yZWRpcmVjdCI7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjI7fQ==', 1682522370);
+('KZ3r8xhnfK92bcN010ahNcX0ONdvtoR7O9s6hXkB', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoidzlYcTdwR2IyekRxMWN0dGxpZ1RHS3RFdGlxNk5XUkxQckNzaU9TdyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzU6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9zaG93X2Jvb2tpbmdzIjt9czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTt9', 1682530339);
 
 -- --------------------------------------------------------
 
@@ -377,7 +374,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `usertype`, `phone`, `address`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `two_factor_confirmed_at`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
 (1, 'Lux', 'luxmotsumi67@gmail.com', '1', NULL, NULL, NULL, '$2y$10$iPj6I3S7bkZC1u.Biv1dYONXe2bGjg6lP0jTuOyS3ylMDvwsHp38y', NULL, NULL, NULL, NULL, NULL, NULL, '2023-03-01 05:15:52', '2023-03-01 05:15:52'),
-(2, 'User1', 'user1@gmail.com', '0', NULL, NULL, NULL, '$2y$10$jBslUKmbUjadC15jQ2nCyudsarIDSFVBCkG8HC9mA330NzMMo7.3G', NULL, NULL, NULL, NULL, NULL, NULL, '2023-04-26 13:16:14', '2023-04-26 13:16:14');
+(2, 'User1', 'user1@gmail.com', '1', NULL, NULL, NULL, '$2y$10$jBslUKmbUjadC15jQ2nCyudsarIDSFVBCkG8HC9mA330NzMMo7.3G', NULL, NULL, NULL, NULL, NULL, NULL, '2023-04-26 13:16:14', '2023-04-26 13:16:14');
 
 --
 -- Indexes for dumped tables
@@ -475,7 +472,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `carts`

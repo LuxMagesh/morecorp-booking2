@@ -11,5 +11,5 @@ I hope all is in order , my machine had a compatibilty issue with the Docker env
 will not damage my application. This forced me into an alternative solution.
 
 
-4. Test Details are : Username : User1 and Password : User12345
+4. Test Details are : Username : user1@gmail.com and Password : User12345
 	The app allows you to register your own users.
