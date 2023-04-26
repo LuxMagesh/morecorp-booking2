@@ -32,7 +32,8 @@ class HomeController extends Controller
             }
         else
             {
-                return view('home.booking');
+                $bookings=bookings::all();
+                return view('admin.booking', compact('bookings'));
             }
     }
 
